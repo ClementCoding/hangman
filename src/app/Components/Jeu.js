@@ -4,6 +4,7 @@ import Keyboard from './Keyboard';
 import Popup from './Popup';
 import './styles.css';
 
+// Définition des SVG directement dans le fichier
 const Etape1 = (
   <svg viewBox="0 0 200 200" width="200" height="300">
     <circle cx="100" cy="60" r="20" fill="brown" />
@@ -255,7 +256,7 @@ function Jeu() {
       case 9:
         return Etape9;
        case 10:
-        return Etape9;
+        return Etape10;
     }
   };
 
@@ -277,7 +278,7 @@ function Jeu() {
           <Keyboard onSelectLetter={handleSelectLetter} motAleatoire={motAleatoire} />
           {erreurs > 0 && getPenduParts()}
           {victoire && <Popup onNewGame={() => window.location.reload()}  message={translations[langueSelectionnee].victory} />}
-          {perdu && <Popup onNewGame={() => window.location.reload()} message={translations[langueSelectionnee].defeat} />}
+          {perdu && <Popup onNewGame={() => window.location.reload()} message="Vous avez perdu !" motPerdu={motAleatoire} />}
         </div>
       )}
     </div>
