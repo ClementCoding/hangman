@@ -1,5 +1,5 @@
 import React from 'react';
-import Jeu from './Components/Jeu'; // Assurez-vous que le chemin est correct 
+import Jeu from './Components/Jeu';
 
 const Page = () => {
   return (
