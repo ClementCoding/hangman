@@ -255,7 +255,7 @@ function Jeu() {
       case 9:
         return Etape9;
        case 10:
-        return Etape10;
+        return Etape9;
     }
   };
 
