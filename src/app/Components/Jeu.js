@@ -4,7 +4,6 @@ import Keyboard from './Keyboard';
 import Popup from './Popup';
 import './styles.css';
 
-// Définition des SVG directement dans le fichier
 const Etape1 = (
   <svg viewBox="0 0 200 200" width="200" height="300">
     <circle cx="100" cy="60" r="20" fill="brown" />
