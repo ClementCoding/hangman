@@ -277,7 +277,7 @@ function Jeu() {
           <Keyboard onSelectLetter={handleSelectLetter} motAleatoire={motAleatoire} />
           {erreurs > 0 && getPenduParts()}
           {victoire && <Popup onNewGame={() => window.location.reload()}  message={translations[langueSelectionnee].victory} />}
-          {perdu && <Popup onNewGame={() => window.location.reload()} message="Vous avez perdu !" motPerdu={motAleatoire} />}
+          {perdu && <Popup onNewGame={() => window.location.reload()} message="Bahahhaah Looser t'as perdu!" motPerdu={motAleatoire} />}
         </div>
       )}
     </div>
