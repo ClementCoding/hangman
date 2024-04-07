@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Popup = ({ onNewGame, message }) => {
+const Popup = ({ onNewGame, message, motPerdu }) => {
   const handleNewGameClick = () => {
     onNewGame();
   };
@@ -9,6 +9,7 @@ const Popup = ({ onNewGame, message }) => {
     <div className="popup">
       <div className="popup-content">
         <h2>{message}</h2>
+        {motPerdu && <p>Le mot était : {motPerdu}</p>}
         <button onClick={handleNewGameClick}>Nouvelle partie</button>
       </div>
     </div>
